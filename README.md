@@ -45,6 +45,12 @@ escalation recall allow none.
 Exit codes: `0` pass, `1` regression, `2` setup error. In GitHub Actions the table is written to the
 job summary. To accept a change: `cx-gate --prompt <name> --update-baseline` (refused if it fails).
 
+<img width="913" height="577" alt="image" src="https://github.com/user-attachments/assets/06919436-ef91-4de9-bc97-fd6f25ed247a" />
+
+<img width="1104" height="810" alt="image" src="https://github.com/user-attachments/assets/49acf95d-13d7-4724-8f1f-5ff3b959eb0f" />
+
+
+
 ## Use real models and LangSmith
 
 ```bash
