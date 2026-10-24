@@ -88,7 +88,7 @@ exact policy", "never promise", "at most N words") and builds replies from them,
 tickets with keyword rules. Change the prompt and its behaviour changes predictably, which is what
 you need to test the graph, scorers and gate. **It says nothing about real model quality.**
 
-## Limits (be honest in your post)
+## Limits
 
 - Scorers are deterministic heuristics (keyword lists, substring facts). They are blunt: a live model
   that writes "thirty days" instead of "30 days" would lose points. Week 2 adds an LLM judge.
