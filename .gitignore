@@ -7,4 +7,4 @@ dist/
 build/
 .env
 .cx_cache/
-data/
+/data/
