@@ -1,0 +1,522 @@
+[
+  {
+    "method": "keyword",
+    "k": 2,
+    "labelled": 103,
+    "recall@1": 0.8835,
+    "recall@2": 0.9126,
+    "mrr": 0.9029,
+    "precision@2": 0.8283,
+    "no_policy_tickets": 22,
+    "no_policy_noise": 0.1364,
+    "misses": [
+      {
+        "id": "t12",
+        "want": [
+          "damaged_in_transit",
+          "warranty"
+        ],
+        "got": [
+          "warranty"
+        ],
+        "ticket": "The mug I received is cracked. I have photos. What can you do?"
+      },
+      {
+        "id": "t22",
+        "want": [
+          "account_lockout",
+          "password_reset"
+        ],
+        "got": [
+          "account_lockout"
+        ],
+        "ticket": "Urgent: I'm locked out of my account and I have a presentation in an hour, please help ASA"
+      },
+      {
+        "id": "t38",
+        "want": [
+          "gift_returns"
+        ],
+        "got": [
+          "refund_window"
+        ],
+        "ticket": "I received a blanket as a gift and want to return it. Will the person who bought it find o"
+      },
+      {
+        "id": "t61",
+        "want": [
+          "price_adjustment"
+        ],
+        "got": [],
+        "ticket": "I bought a coat last week and now it's on sale for $30 less. Can I get the difference back"
+      },
+      {
+        "id": "t80",
+        "want": [
+          "notifications"
+        ],
+        "got": [],
+        "ticket": "I'm getting way too many marketing emails. How do I stop them?"
+      },
+      {
+        "id": "t98",
+        "want": [
+          "billing_duplicate"
+        ],
+        "got": [
+          "refund_window"
+        ],
+        "ticket": "Worst company ever. You charged me three times and I need that money back today, I can't p"
+      },
+      {
+        "id": "t100",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine."
+      },
+      {
+        "id": "t102",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?"
+      },
+      {
+        "id": "m01",
+        "want": [
+          "lost_package"
+        ],
+        "got": [
+          "shipping_times"
+        ],
+        "ticket": "Sure, it's order #8125. Tracking hasn't changed in 8 days."
+      },
+      {
+        "id": "m20",
+        "want": [
+          "gift_returns"
+        ],
+        "got": [
+          "refund_window"
+        ],
+        "ticket": "Hmm, I'd really prefer a refund to my card instead of store credit. Is that possible?"
+      }
+    ]
+  },
+  {
+    "method": "bm25",
+    "k": 2,
+    "labelled": 103,
+    "recall@1": 0.767,
+    "recall@2": 0.801,
+    "mrr": 0.7864,
+    "precision@2": 0.8706,
+    "no_policy_tickets": 22,
+    "no_policy_noise": 0.0909,
+    "misses": [
+      {
+        "id": "t01",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "Hi, I bought a jacket 12 days ago and it doesn't fit. Can I return it for a refund?"
+      },
+      {
+        "id": "t12",
+        "want": [
+          "damaged_in_transit",
+          "warranty"
+        ],
+        "got": [],
+        "ticket": "The mug I received is cracked. I have photos. What can you do?"
+      },
+      {
+        "id": "t13",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "Can I exchange a size M for an L? I still have the tags on."
+      },
+      {
+        "id": "t22",
+        "want": [
+          "account_lockout",
+          "password_reset"
+        ],
+        "got": [
+          "account_lockout"
+        ],
+        "ticket": "Urgent: I'm locked out of my account and I have a presentation in an hour, please help ASA"
+      },
+      {
+        "id": "t23",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "How long until my refund shows up? I returned the shoes last week."
+      },
+      {
+        "id": "t27",
+        "want": [
+          "international_shipping"
+        ],
+        "got": [],
+        "ticket": "Do you ship internationally? What does it cost?"
+      },
+      {
+        "id": "t29",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "Refund please. Order 8832, card 4111 1111 1111 1111 was charged."
+      },
+      {
+        "id": "t31",
+        "want": [
+          "warranty"
+        ],
+        "got": [],
+        "ticket": "I am FURIOUS. Third time I'm writing about my broken blender and I want a manager immediat"
+      },
+      {
+        "id": "t35",
+        "want": [
+          "wrong_item"
+        ],
+        "got": [],
+        "ticket": "Order #5520 came with someone else's item, not what I ordered at all."
+      },
+      {
+        "id": "t40",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "It's been 45 days since delivery, can I still return the boots?"
+      },
+      {
+        "id": "t41",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "I returned my order two weeks ago and still no refund. What is going on?"
+      },
+      {
+        "id": "t45",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "Can you upgrade my order to express for free? It's a birthday gift."
+      },
+      {
+        "id": "t55",
+        "want": [
+          "international_shipping"
+        ],
+        "got": [],
+        "ticket": "Do you ship to the UK? I'd love to order a few things."
+      },
+      {
+        "id": "t67",
+        "want": [
+          "invoices"
+        ],
+        "got": [],
+        "ticket": "I need an invoice for my order for my expense report."
+      },
+      {
+        "id": "t100",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine."
+      },
+      {
+        "id": "t102",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?"
+      },
+      {
+        "id": "t103",
+        "want": [
+          "password_reset"
+        ],
+        "got": [
+          "warranty"
+        ],
+        "ticket": "I'm annoyed. The app logged me out and now my password doesn't work."
+      },
+      {
+        "id": "t104",
+        "want": [
+          "warranty"
+        ],
+        "got": [],
+        "ticket": "Honestly disappointed. The sofa cushion seam split after 3 months."
+      },
+      {
+        "id": "t105",
+        "want": [
+          "warranty"
+        ],
+        "got": [],
+        "ticket": "The smoke detector I ordered beeps constantly even with a new battery. Is it defective?"
+      },
+      {
+        "id": "m03",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "They were only worn indoors for an hour. Does that still count as used?"
+      },
+      {
+        "id": "m13",
+        "want": [
+          "refund_window"
+        ],
+        "got": [
+          "international_shipping"
+        ],
+        "ticket": "Order #4410. This is my third message and still nothing."
+      }
+    ]
+  },
+  {
+    "method": "hybrid",
+    "k": 2,
+    "labelled": 103,
+    "recall@1": 0.9223,
+    "recall@2": 0.9709,
+    "mrr": 0.9515,
+    "precision@2": 0.7723,
+    "no_policy_tickets": 22,
+    "no_policy_noise": 0.1818,
+    "misses": [
+      {
+        "id": "t12",
+        "want": [
+          "damaged_in_transit",
+          "warranty"
+        ],
+        "got": [
+          "warranty"
+        ],
+        "ticket": "The mug I received is cracked. I have photos. What can you do?"
+      },
+      {
+        "id": "t22",
+        "want": [
+          "account_lockout",
+          "password_reset"
+        ],
+        "got": [
+          "account_lockout"
+        ],
+        "ticket": "Urgent: I'm locked out of my account and I have a presentation in an hour, please help ASA"
+      },
+      {
+        "id": "t100",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine."
+      },
+      {
+        "id": "t102",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [],
+        "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?"
+      }
+    ]
+  },
+  {
+    "method": "embed+ollama:nomic-embed-text",
+    "k": 2,
+    "labelled": 103,
+    "recall@1": 0.8058,
+    "recall@2": 0.8835,
+    "mrr": 0.8447,
+    "precision@2": 0.4802,
+    "no_policy_tickets": 22,
+    "no_policy_noise": 0.5909,
+    "misses": [
+      {
+        "id": "t02",
+        "want": [
+          "warranty"
+        ],
+        "got": [
+          "refund_window",
+          "gift_returns"
+        ],
+        "ticket": "I want my money back. The blender stopped working after two weeks and I'm really frustrate"
+      },
+      {
+        "id": "t13",
+        "want": [
+          "refund_window"
+        ],
+        "got": [],
+        "ticket": "Can I exchange a size M for an L? I still have the tags on."
+      },
+      {
+        "id": "t29",
+        "want": [
+          "refund_window"
+        ],
+        "got": [
+          "payment_declined",
+          "billing_duplicate"
+        ],
+        "ticket": "Refund please. Order 8832, card 4111 1111 1111 1111 was charged."
+      },
+      {
+        "id": "t31",
+        "want": [
+          "warranty"
+        ],
+        "got": [
+          "damaged_in_transit"
+        ],
+        "ticket": "I am FURIOUS. Third time I'm writing about my broken blender and I want a manager immediat"
+      },
+      {
+        "id": "t40",
+        "want": [
+          "refund_window"
+        ],
+        "got": [
+          "gift_returns",
+          "damaged_in_transit"
+        ],
+        "ticket": "It's been 45 days since delivery, can I still return the boots?"
+      },
+      {
+        "id": "t43",
+        "want": [
+          "warranty"
+        ],
+        "got": [
+          "damaged_in_transit",
+          "lost_package"
+        ],
+        "ticket": "My headphones are defective, the left side cut out after a month. Can you send new ones fa"
+      },
+      {
+        "id": "t45",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [
+          "invoices",
+          "gift_cards"
+        ],
+        "ticket": "Can you upgrade my order to express for free? It's a birthday gift."
+      },
+      {
+        "id": "t52",
+        "want": [
+          "order_changes"
+        ],
+        "got": [
+          "promo_codes",
+          "guest_orders"
+        ],
+        "ticket": "Can I add an item to an order I placed this morning?"
+      },
+      {
+        "id": "t57",
+        "want": [
+          "billing_duplicate"
+        ],
+        "got": [
+          "return_shipping_cost",
+          "invoices"
+        ],
+        "ticket": "I see two charges of $48.20 for one order. Please help."
+      },
+      {
+        "id": "t100",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [
+          "order_changes",
+          "lost_package"
+        ],
+        "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine."
+      },
+      {
+        "id": "t102",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [
+          "order_changes",
+          "price_adjustment"
+        ],
+        "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?"
+      },
+      {
+        "id": "t104",
+        "want": [
+          "warranty"
+        ],
+        "got": [],
+        "ticket": "Honestly disappointed. The sofa cushion seam split after 3 months."
+      }
+    ]
+  },
+  {
+    "method": "hybrid+ollama:nomic-embed-text",
+    "k": 2,
+    "labelled": 103,
+    "recall@1": 0.932,
+    "recall@2": 0.9806,
+    "mrr": 0.9563,
+    "precision@2": 0.5243,
+    "no_policy_tickets": 22,
+    "no_policy_noise": 0.5909,
+    "misses": [
+      {
+        "id": "t100",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [
+          "order_changes",
+          "lost_package"
+        ],
+        "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine."
+      },
+      {
+        "id": "t102",
+        "want": [
+          "shipping_times"
+        ],
+        "got": [
+          "order_changes",
+          "price_adjustment"
+        ],
+        "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?"
+      }
+    ]
+  }
+]

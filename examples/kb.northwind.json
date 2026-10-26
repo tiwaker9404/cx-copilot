@@ -1,0 +1,394 @@
+[
+  {
+    "id": "refund_window",
+    "category": "returns",
+    "keywords": [
+      "refund",
+      "return",
+      "money back",
+      "exchange",
+      "send back",
+      "send it back"
+    ],
+    "text": "Refunds are available within 30 days of delivery for unused items in original packaging. Approved refunds go back to the original payment method in 5-7 business days."
+  },
+  {
+    "id": "warranty",
+    "category": "returns",
+    "keywords": [
+      "broken",
+      "defective",
+      "cracked",
+      "warranty",
+      "stopped working",
+      "doesn't work",
+      "faulty"
+    ],
+    "text": "Items are covered by a 12-month warranty against defects. We send a free replacement once you share a photo of the defect."
+  },
+  {
+    "id": "damaged_in_transit",
+    "category": "returns",
+    "keywords": [
+      "arrived damaged",
+      "damaged",
+      "smashed",
+      "dented",
+      "box was crushed",
+      "shattered",
+      "arrived broken"
+    ],
+    "text": "If an item arrives damaged, send a photo within 48 hours of delivery and we ship a free replacement. You don't need to return the damaged item."
+  },
+  {
+    "id": "wrong_item",
+    "category": "returns",
+    "keywords": [
+      "wrong item",
+      "wrong size",
+      "wrong color",
+      "not what i ordered",
+      "different item",
+      "sent me the wrong"
+    ],
+    "text": "If you received the wrong item, we email a prepaid return label and ship the correct item as soon as the carrier scans the return."
+  },
+  {
+    "id": "return_shipping_cost",
+    "category": "returns",
+    "keywords": [
+      "return shipping",
+      "return label",
+      "pay for the return",
+      "cost to return",
+      "label fee"
+    ],
+    "text": "Return shipping is free for defective or wrong items. For other returns, a $6 label fee is deducted from the refund."
+  },
+  {
+    "id": "gift_returns",
+    "category": "returns",
+    "keywords": [
+      "return a gift",
+      "returning a gift",
+      "was a gift",
+      "was a present",
+      "received as a gift",
+      "gift receipt"
+    ],
+    "text": "Gifts can be returned within 30 days of delivery and are refunded as store credit to the recipient. The buyer is not notified."
+  },
+  {
+    "id": "shipping_times",
+    "category": "shipping",
+    "keywords": [
+      "shipping",
+      "delivery",
+      "arrive",
+      "tracking",
+      "how long",
+      "express"
+    ],
+    "text": "Standard shipping takes 3-5 business days and express takes 1-2 business days. A tracking email is sent when your order ships."
+  },
+  {
+    "id": "lost_package",
+    "category": "shipping",
+    "keywords": [
+      "lost",
+      "missing",
+      "never arrived",
+      "stuck",
+      "hasn't moved",
+      "hasn't updated",
+      "no movement"
+    ],
+    "text": "If tracking shows no movement for 7 days, we reissue the order or refund it in full. Please contact us within 30 days of the ship date."
+  },
+  {
+    "id": "delivered_not_received",
+    "category": "shipping",
+    "keywords": [
+      "delivered",
+      "never got",
+      "didn't receive",
+      "not received",
+      "porch"
+    ],
+    "text": "If tracking says delivered but nothing arrived, check with neighbors and household members for 24 hours, then contact us and we will open a carrier investigation."
+  },
+  {
+    "id": "order_changes",
+    "category": "shipping",
+    "keywords": [
+      "cancel my order",
+      "cancel the order",
+      "cancel an order",
+      "change my order",
+      "modify",
+      "add an item",
+      "ordered by mistake",
+      "change the size"
+    ],
+    "text": "Orders can be changed or cancelled within 1 hour of placing them under Account > Orders. After that the order ships and can be returned once it arrives."
+  },
+  {
+    "id": "address_change",
+    "category": "shipping",
+    "keywords": [
+      "shipping address",
+      "delivery address",
+      "wrong address",
+      "change the address",
+      "change my address",
+      "moved",
+      "ship to a different",
+      "redirect"
+    ],
+    "text": "We can update the shipping address until the order ships. Once it has shipped, the carrier cannot redirect it, so please contact us before then."
+  },
+  {
+    "id": "international_shipping",
+    "category": "shipping",
+    "keywords": [
+      "international",
+      "internationally",
+      "canada",
+      "overseas",
+      "abroad",
+      "uk",
+      "united kingdom",
+      "europe",
+      "customs",
+      "duties",
+      "outside the us"
+    ],
+    "text": "We ship to the US and Canada only. Canadian orders take 5-10 business days and may owe import duties on delivery."
+  },
+  {
+    "id": "billing_duplicate",
+    "category": "billing",
+    "keywords": [
+      "charged twice",
+      "double charge",
+      "double charged",
+      "duplicate",
+      "twice",
+      "pending"
+    ],
+    "text": "Confirmed duplicate charges are reversed within 3-5 business days. A pending authorization drops off automatically within 5 days."
+  },
+  {
+    "id": "billing_subscription",
+    "category": "billing",
+    "keywords": [
+      "cancel my subscription",
+      "subscription",
+      "renew",
+      "membership",
+      "auto-renew"
+    ],
+    "text": "You can cancel any time under Settings > Billing. Access continues until the end of the paid period."
+  },
+  {
+    "id": "price_adjustment",
+    "category": "billing",
+    "keywords": [
+      "price drop",
+      "went on sale",
+      "price match",
+      "cheaper now",
+      "lower price",
+      "price difference",
+      "price adjustment"
+    ],
+    "text": "If an item's price drops within 14 days of your purchase, we refund the difference once per order. Price matching with other stores is not offered."
+  },
+  {
+    "id": "promo_codes",
+    "category": "billing",
+    "keywords": [
+      "promo",
+      "coupon",
+      "discount code",
+      "code didn't work",
+      "code not working",
+      "voucher"
+    ],
+    "text": "Promo codes must be entered at checkout and can't be combined or added to an order after it is placed."
+  },
+  {
+    "id": "payment_declined",
+    "category": "billing",
+    "keywords": [
+      "declined",
+      "payment failed",
+      "card was rejected",
+      "card not accepted",
+      "payment didn't go through"
+    ],
+    "text": "If your card is declined, check that the billing address matches the card and try again, or pay with PayPal. We never see your full card number."
+  },
+  {
+    "id": "invoices",
+    "category": "billing",
+    "keywords": [
+      "invoice",
+      "receipt",
+      "vat",
+      "tax receipt",
+      "proof of purchase"
+    ],
+    "text": "Invoices are under Account > Orders: open the order and choose Download invoice."
+  },
+  {
+    "id": "password_reset",
+    "category": "account",
+    "keywords": [
+      "password",
+      "log in",
+      "login",
+      "sign in",
+      "reset link"
+    ],
+    "text": "Use Forgot password on the sign-in page. The reset link expires after 60 minutes."
+  },
+  {
+    "id": "account_lockout",
+    "category": "account",
+    "keywords": [
+      "locked out",
+      "locked",
+      "too many attempts",
+      "account is locked"
+    ],
+    "text": "After 5 failed sign-in attempts an account locks for 30 minutes, then you can try again or use Forgot password."
+  },
+  {
+    "id": "email_change",
+    "category": "account",
+    "keywords": [
+      "change the email",
+      "change my email",
+      "change email",
+      "update my email",
+      "update email",
+      "new email",
+      "old email"
+    ],
+    "text": "Changing the email on an account requires a verification code sent to the current email address."
+  },
+  {
+    "id": "two_factor",
+    "category": "account",
+    "keywords": [
+      "two-factor",
+      "2fa",
+      "authenticator",
+      "verification app",
+      "lost my phone",
+      "security code",
+      "backup code"
+    ],
+    "text": "If you lost your two-factor device, sign in with one of your backup codes. Without backup codes, identity verification takes 2-3 business days."
+  },
+  {
+    "id": "delete_account",
+    "category": "account",
+    "keywords": [
+      "delete my account",
+      "delete account",
+      "close my account",
+      "remove my data",
+      "delete my data",
+      "all my data"
+    ],
+    "text": "You can delete your account under Settings > Privacy > Delete account. Deletion becomes permanent after 30 days; signing in before then cancels it."
+  },
+  {
+    "id": "app_crash",
+    "category": "technical",
+    "keywords": [
+      "crash",
+      "freez*",
+      "won't open",
+      "not loading",
+      "app"
+    ],
+    "text": "Update to the latest app version and restart. If the problem continues, send your device model and OS version so engineering can investigate."
+  },
+  {
+    "id": "site_error",
+    "category": "technical",
+    "keywords": [
+      "website",
+      "check out",
+      "checkout",
+      "error",
+      "browser"
+    ],
+    "text": "If the website shows an error, clear your browser cache and try again in a private window. If it persists, send us the page link and a screenshot."
+  },
+  {
+    "id": "notifications",
+    "category": "technical",
+    "keywords": [
+      "notification",
+      "too many emails",
+      "unsubscribe",
+      "push",
+      "alerts",
+      "spam"
+    ],
+    "text": "Turn order and marketing notifications on or off under Settings > Notifications. Marketing emails also have an unsubscribe link at the bottom."
+  },
+  {
+    "id": "guest_orders",
+    "category": "technical",
+    "keywords": [
+      "guest",
+      "checked out as a guest",
+      "order isn't showing",
+      "can't see my order",
+      "not in my order history",
+      "missing from my account"
+    ],
+    "text": "Orders placed as a guest don't appear in your account automatically. Add one under Account > Orders > Find an order, using the order number and email."
+  },
+  {
+    "id": "rewards",
+    "category": "other",
+    "keywords": [
+      "points",
+      "rewards",
+      "loyalty",
+      "member perks"
+    ],
+    "text": "Northwind Rewards points post 14 days after delivery and expire after 12 months without a purchase."
+  },
+  {
+    "id": "gift_cards",
+    "category": "other",
+    "keywords": [
+      "gift card",
+      "gift certificate",
+      "e-gift"
+    ],
+    "text": "Gift cards never expire, can be used on any order and can't be exchanged for cash."
+  },
+  {
+    "id": "stores",
+    "category": "other",
+    "keywords": [
+      "physical store",
+      "store near",
+      "visit",
+      "in person",
+      "showroom",
+      "pick up",
+      "pickup",
+      "location"
+    ],
+    "text": "Northwind Goods is online only. We have no physical stores or pickup locations."
+  }
+]

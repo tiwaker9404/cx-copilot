@@ -1,0 +1,14 @@
+{
+  "_doc": "Per-ticket cost and latency limits checked by cx-gate. 'default' applies to every model; a model's own section overrides it. Latency is model time per ticket (all calls), p95. Live limits are about 1.5x what the v0.3 run measured on a MacBook (qwen2.5:7b + v4: 1,073 tokens, p95 14.8 s; llama3.2 + v4: 1,101 tokens, p95 9.0 s).",
+  "default": {
+    "mean_calls_per_ticket": 2.5,
+    "mean_tokens_per_ticket": 1700,
+    "p95_model_ms_per_ticket": null
+  },
+  "ollama:qwen2.5:7b": {
+    "p95_model_ms_per_ticket": 22000
+  },
+  "ollama:llama3.2": {
+    "p95_model_ms_per_ticket": 14000
+  }
+}

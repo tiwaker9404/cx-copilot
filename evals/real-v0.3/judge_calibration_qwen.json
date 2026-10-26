@@ -1,0 +1,259 @@
+{
+  "judge": "ollama:qwen2.5:7b/judge_v1",
+  "n": 40,
+  "unparseable": 0,
+  "criteria": {
+    "grounded": {
+      "n": 40,
+      "agreement": 0.8,
+      "kappa": 0.6145,
+      "fails_caught": 15,
+      "fails_missed": 0,
+      "false_alarms": 8,
+      "passes_agreed": 17,
+      "trusted": false
+    },
+    "answers_question": {
+      "n": 40,
+      "agreement": 0.875,
+      "kappa": 0.6269,
+      "fails_caught": 6,
+      "fails_missed": 2,
+      "false_alarms": 3,
+      "passes_agreed": 29,
+      "trusted": true
+    },
+    "tone_ok": {
+      "n": 40,
+      "agreement": 0.95,
+      "kappa": 0.7222,
+      "fails_caught": 3,
+      "fails_missed": 1,
+      "false_alarms": 1,
+      "passes_agreed": 35,
+      "trusted": true
+    },
+    "no_invented_commitments": {
+      "n": 40,
+      "agreement": 0.725,
+      "kappa": 0.45,
+      "fails_caught": 9,
+      "fails_missed": 0,
+      "false_alarms": 11,
+      "passes_agreed": 20,
+      "trusted": false
+    }
+  },
+  "disagreements": [
+    {
+      "id": "j11",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "invented commitment to share feedback without policy support",
+      "reply": "Thank you so much for the kind words! I'll share them with the team. Enjoy the jacket, and reply any time if you need anything. - Northwind Support"
+    },
+    {
+      "id": "j24",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "Did not address the shipping cost for non-defective returns",
+      "reply": "Thanks for reaching out. Refunds are available within 30 days of delivery for unused items in original packaging. Next step: send the item back unused. - Northwind Support"
+    },
+    {
+      "id": "j25",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "Does not address the password reset link expiration issue.",
+      "reply": "Thanks for contacting Northwind Goods. We're always happy to help with your account. Next step: let us know if there's anything else. - Northwind Support"
+    },
+    {
+      "id": "j29",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "lacks details about specific order, fails to address customer's issue, tone is not polite",
+      "reply": "As the policy clearly states, confirmed duplicate charges are reversed within 3-5 business days. Please read the policy before contacting us. - Northwind Support"
+    },
+    {
+      "id": "j30",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "Invents a common reason without evidence and blames the customer.",
+      "reply": "Most of the time the package was taken by someone in your household, so you should have checked first. Check with them for 24 hours, then contact us and we will open a carrier investigation. - Northwi"
+    },
+    {
+      "id": "j32",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "Sarcasm and invented commitment to free replacement.",
+      "reply": "Calm down, it's just a seam. Items are covered by a 12-month warranty against defects; share a photo and we send a free replacement. - Northwind Support"
+    },
+    {
+      "id": "j33",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "Invented reissuing or refunding without customer consent",
+      "reply": "Thanks for following up with the order number. Since tracking hasn't moved in over 7 days, we reissue the order or refund it in full under our lost-package policy. Next step: reply to tell us whether "
+    },
+    {
+      "id": "j34",
+      "criterion": "grounded",
+      "human": true,
+      "judge": false,
+      "reason": "Repeats the customer's request without providing the order number and does not follow the policy note's exact wording.",
+      "reply": "I'm sorry about that. Confirmed duplicate charges are reversed within 3-5 business days. Please reply with your order number. - Northwind Support"
+    },
+    {
+      "id": "j13",
+      "criterion": "answers_question",
+      "human": false,
+      "judge": true,
+      "reason": "Promise of express shipping without policy support",
+      "reply": "I'm so sorry about the delay! I've upgraded your order to express shipping at no cost, so it will arrive tomorrow. - Northwind Support"
+    },
+    {
+      "id": "j22",
+      "criterion": "answers_question",
+      "human": true,
+      "judge": false,
+      "reason": "incorrect fee information",
+      "reply": "Good question. Return shipping is free for every return, so there's no fee. Next step: request a return label. - Northwind Support"
+    },
+    {
+      "id": "j23",
+      "criterion": "answers_question",
+      "human": true,
+      "judge": false,
+      "reason": "Inaccurate timeframe and no mention of 14 days after delivery",
+      "reply": "Thanks for asking! Points usually post within a few hours of purchase. Next step: check your balance tomorrow. - Northwind Support"
+    },
+    {
+      "id": "j27",
+      "criterion": "answers_question",
+      "human": false,
+      "judge": true,
+      "reason": "ok",
+      "reply": "Thanks for asking! Gifts can be returned within 30 days of delivery and are refunded as store credit to the recipient. Next step: start the return within 30 days. - Northwind Support"
+    },
+    {
+      "id": "j29",
+      "criterion": "answers_question",
+      "human": true,
+      "judge": false,
+      "reason": "lacks details about specific order, fails to address customer's issue, tone is not polite",
+      "reply": "As the policy clearly states, confirmed duplicate charges are reversed within 3-5 business days. Please read the policy before contacting us. - Northwind Support"
+    },
+    {
+      "id": "j31",
+      "criterion": "tone_ok",
+      "human": false,
+      "judge": true,
+      "reason": "ok",
+      "reply": "Update to the latest app version and restart. Send device model and OS version. - Northwind Support"
+    },
+    {
+      "id": "j40",
+      "criterion": "tone_ok",
+      "human": true,
+      "judge": false,
+      "reason": "Ugh, sorry! is unprofessional.",
+      "reply": "Ugh, sorry! Send a photo within 48 hours of delivery and we ship a free replacement; you don't need to return the damaged mug. Next step: reply with the photos. - Northwind Support"
+    },
+    {
+      "id": "j11",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "invented commitment to share feedback without policy support",
+      "reply": "Thank you so much for the kind words! I'll share them with the team. Enjoy the jacket, and reply any time if you need anything. - Northwind Support"
+    },
+    {
+      "id": "j19",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Express shipping takes 1-2 business days, not 2-3.",
+      "reply": "Thanks for asking. Express shipping takes 2-3 business days to Oregon. Next step: choose express at checkout. - Northwind Support"
+    },
+    {
+      "id": "j20",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Invented menu path 'Account > Membership > Cancel plan'. Policy only mentions 'Settings > Billing'.",
+      "reply": "You can cancel any time under Account > Membership > Cancel plan, and access continues until the end of the paid period. Next step: open Account > Membership. - Northwind Support"
+    },
+    {
+      "id": "j21",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Invented longer return period of 60 days; correct period is 30 days.",
+      "reply": "Thanks for reaching out. Returns are accepted within 60 days, and refunds arrive in 5-7 business days. Next step: send it back unused. - Northwind Support"
+    },
+    {
+      "id": "j23",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Inaccurate timeframe and no mention of 14 days after delivery",
+      "reply": "Thanks for asking! Points usually post within a few hours of purchase. Next step: check your balance tomorrow. - Northwind Support"
+    },
+    {
+      "id": "j29",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "lacks details about specific order, fails to address customer's issue, tone is not polite",
+      "reply": "As the policy clearly states, confirmed duplicate charges are reversed within 3-5 business days. Please read the policy before contacting us. - Northwind Support"
+    },
+    {
+      "id": "j30",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Invents a common reason without evidence and blames the customer.",
+      "reply": "Most of the time the package was taken by someone in your household, so you should have checked first. Check with them for 24 hours, then contact us and we will open a carrier investigation. - Northwi"
+    },
+    {
+      "id": "j32",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Sarcasm and invented commitment to free replacement.",
+      "reply": "Calm down, it's just a seam. Items are covered by a 12-month warranty against defects; share a photo and we send a free replacement. - Northwind Support"
+    },
+    {
+      "id": "j33",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Invented reissuing or refunding without customer consent",
+      "reply": "Thanks for following up with the order number. Since tracking hasn't moved in over 7 days, we reissue the order or refund it in full under our lost-package policy. Next step: reply to tell us whether "
+    },
+    {
+      "id": "j34",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Repeats the customer's request without providing the order number and does not follow the policy note's exact wording.",
+      "reply": "I'm sorry about that. Confirmed duplicate charges are reversed within 3-5 business days. Please reply with your order number. - Northwind Support"
+    },
+    {
+      "id": "j35",
+      "criterion": "no_invented_commitments",
+      "human": true,
+      "judge": false,
+      "reason": "Invented path to cancel subscription instead of billing settings",
+      "reply": "Sorry for the confusion. In the app, go to Profile > Subscriptions > Manage to cancel. Next step: try that path. - Northwind Support"
+    }
+  ],
+  "calls": 40,
+  "tokens": 17019
+}

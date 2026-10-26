@@ -1,0 +1,4618 @@
+{
+  "prompt": "reply_v1_baseline",
+  "reference": "ollama:qwen2.5:7b",
+  "repeats": 1,
+  "results": {
+    "ollama:qwen2.5:7b": {
+      "metrics": {
+        "actionable": 0.8081,
+        "category_accuracy": 0.832,
+        "draft_commitment_free": 0.9327,
+        "empathy": 0.8333,
+        "escalation_correct": 0.952,
+        "escalation_recall": 1.0,
+        "first_try_clean": 0.9135,
+        "followup_not_repeated": 1.0,
+        "judge_answers_question": 0.9293,
+        "judge_grounded": 0.899,
+        "judge_no_invented_commitments": 0.8283,
+        "judge_tone_ok": 1.0,
+        "length_ok": 1.0,
+        "no_invented_commitments": 1.0,
+        "no_repeat_questions": 1.0,
+        "policy_grounded": 0.7989,
+        "quality": 0.9005,
+        "retrieval_recall": 0.9783,
+        "safety": 1.0
+      },
+      "spread": {
+        "actionable": 0.0,
+        "category_accuracy": 0.0,
+        "draft_commitment_free": 0.0,
+        "empathy": 0.0,
+        "escalation_correct": 0.0,
+        "escalation_recall": 0.0,
+        "first_try_clean": 0.0,
+        "followup_not_repeated": 0.0,
+        "judge_answers_question": 0.0,
+        "judge_grounded": 0.0,
+        "judge_no_invented_commitments": 0.0,
+        "judge_tone_ok": 0.0,
+        "length_ok": 0.0,
+        "no_invented_commitments": 0.0,
+        "no_repeat_questions": 0.0,
+        "policy_grounded": 0.0,
+        "quality": 0.0,
+        "retrieval_recall": 0.0,
+        "safety": 0.0
+      },
+      "tickets": {
+        "t01": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t02": {
+          "scores": {
+            "quality": 0.6956521739130433
+          }
+        },
+        "t03": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t04": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t05": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t06": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t07": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t08": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t09": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t10": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t11": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t12": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t13": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t14": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t15": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t16": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t17": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t18": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t19": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t20": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t21": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t22": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t23": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t24": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t25": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t26": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t27": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t28": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t29": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t30": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t31": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t32": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t33": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t34": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t35": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t36": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t37": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t38": {
+          "scores": {
+            "quality": 0.8750000000000001
+          }
+        },
+        "t39": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t40": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t41": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t42": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t43": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t44": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t45": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t46": {
+          "scores": {
+            "quality": 0.6521739130434782
+          }
+        },
+        "t47": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t48": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t49": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t50": {
+          "scores": {
+            "quality": 0.725
+          }
+        },
+        "t51": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t52": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t53": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t54": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t55": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t56": {
+          "scores": {
+            "quality": 0.775
+          }
+        },
+        "t57": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t58": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t59": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t60": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t61": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t62": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t63": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t64": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t65": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t66": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t67": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t68": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t69": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t70": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t71": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t72": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t73": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t74": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t75": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t76": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t77": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t78": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t79": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t80": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t81": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t82": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t83": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t84": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t85": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t86": {
+          "scores": {
+            "quality": 0.49999999999999994
+          }
+        },
+        "t87": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t88": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t89": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t90": {
+          "scores": {
+            "quality": 0.8666666666666667
+          }
+        },
+        "t91": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t92": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t93": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t94": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t95": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t96": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t97": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t98": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t99": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t100": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t101": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t102": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t103": {
+          "scores": {
+            "quality": 0.6521739130434782
+          }
+        },
+        "t104": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t105": {
+          "scores": {
+            "quality": 0.4
+          }
+        },
+        "m01": {
+          "scores": {
+            "quality": 0.8749999999999999
+          }
+        },
+        "m02": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m03": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m04": {
+          "scores": {
+            "quality": 0.8571428571428572
+          }
+        },
+        "m05": {
+          "scores": {
+            "quality": 0.6874999999999999
+          }
+        },
+        "m06": {
+          "scores": {
+            "quality": 0.8421052631578947
+          }
+        },
+        "m07": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m08": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m09": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m10": {
+          "scores": {
+            "quality": 0.8571428571428572
+          }
+        },
+        "m11": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m12": {
+          "scores": {
+            "quality": 0.8571428571428572
+          }
+        },
+        "m13": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m14": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m15": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m16": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m17": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m18": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m19": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m20": {
+          "scores": {
+            "quality": 0.7619047619047619
+          }
+        }
+      },
+      "perf": {
+        "latency_known_for": 125.0,
+        "max_tokens_per_ticket": 1418.0,
+        "mean_calls_per_ticket": 1.9,
+        "mean_tokens_per_ticket": 970.0,
+        "p50_model_ms_per_ticket": 7456.0,
+        "p50_wall_ms_per_ticket": 11755.0,
+        "p95_model_ms_per_ticket": 13511.0,
+        "p95_wall_ms_per_ticket": 17459.0,
+        "tickets": 125.0
+      },
+      "qa_caught_first_draft": {
+        "invented commitment": 2,
+        "invented menu path": 2,
+        "invented timeline": 4,
+        "repeat question": 2
+      },
+      "misses": {
+        "t25": {
+          "ticket": "Why was I charged $12 more than the listed price?",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": []
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t31": {
+          "ticket": "I am FURIOUS. Third time I'm writing about my broken blender and I want a manager immediately.",
+          "gold": {
+            "category": "returns",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t50": {
+          "ticket": "I ordered the wrong size 20 minutes ago. Can I change my order to a large?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour",
+              "Account > Orders"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for reaching out. According to our policy, you can change your order to a large size under Account > Orders within the first hour. Since 20 minutes have passed, the order has already shipped and can be returned. To request a retur"
+          }
+        },
+        "t51": {
+          "ticket": "Please cancel my order, I ordered it by mistake yesterday.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Understood. According to our policy, cancellations are available within 1 hour of order placement under Account > Orders. Since your order was placed more than an hour ago, we can process a return once the item ships.\n\nNext, please proceed "
+          }
+        },
+        "t52": {
+          "ticket": "Can I add an item to an order I placed this morning?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "other",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your order from this morning can be modified since it's within the first hour of placement. Go to Account > Orders to make changes.\n\nNext step: Log in to your account and navigate to Account > Orders to adjust your item."
+          }
+        },
+        "t61": {
+          "ticket": "I bought a coat last week and now it's on sale for $30 less. Can I get the difference back?",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "price_adjustment"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for reaching out. According to our policy, you are eligible for a refund of $30 since the price dropped within 14 days of your purchase. Refunds are processed within 5-7 business days to your original payment method.\n\nNext, please"
+          }
+        },
+        "t80": {
+          "ticket": "I'm getting way too many marketing emails. How do I stop them?",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "unsubscribe"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "notifications"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for reaching out. To stop receiving marketing emails, please navigate to Settings > Notifications and adjust your preferences there. Unsubscribe links are also available at the bottom of each marketing email.\n\nNext, please check y"
+          }
+        },
+        "t81": {
+          "ticket": "How do I turn off push notifications for order updates?",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Notifications"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "notifications"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "To turn off push notifications for order updates, please navigate to Settings > Notifications and adjust the settings there. Marketing emails can be unsubscribed from by clicking the unsubscribe link at the bottom.\n\nNext, go to Settings > N"
+          }
+        },
+        "t82": {
+          "ticket": "I checked out as a guest and now my order isn't showing in my account.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Find an order"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "guest_orders"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your order was placed as a guest, so it won't appear in your account automatically. To find it, go to Account > Orders > Find an order, and enter your order number and email.\n\nIf you encounter any errors, try clearing your browser cache or "
+          }
+        },
+        "t83": {
+          "ticket": "I can't see my order from last month in my account. Order #3390.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Find an order"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "guest_orders"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your order #3390 might not be visible as you placed it as a guest. To view it, go to Account > Orders > Find an order, and enter your email and order number. Let me know if you need further assistance."
+          }
+        },
+        "t84": {
+          "ticket": "When do my rewards points show up after I buy something?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your rewards points will be added to your account 14 days after your delivery date. Points expire after 12 months of inactivity. \n\nNext step: Please check your account for updates after the 14-day period."
+          }
+        },
+        "t85": {
+          "ticket": "Do my loyalty points expire?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "12 months"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your loyalty points are valid for 12 months from the date they are posted, which is 14 days after your purchase. Points expire if no purchase is made during this period.\n\nNext, please check your account information for the expiration date o"
+          }
+        },
+        "t86": {
+          "ticket": "Does a Northwind gift card expire? I got one two years ago.",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "never expire"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "gift_cards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your Northwind gift card does not expire. It can be used on any order at our store. If you need assistance accessing your account, please sign in with a backup code if available. Verification without backup codes typically takes 2-3 busines"
+          }
+        },
+        "t87": {
+          "ticket": "Can I get cash back for the rest of my gift card balance?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "exchanged for cash"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "gift_cards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you want cash back for your gift card balance. Per our policy, gift cards can be used on any order but cannot be exchanged for cash. I hope this clarifies things. \n\nNext step: Please let me know if you have any other questions "
+          }
+        },
+        "t92": {
+          "ticket": "Love the new mugs! Any plans to make a bigger size?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": []
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "other",
+            "urgency": "low",
+            "sentiment": "positive",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t100": {
+          "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t102": {
+          "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "high",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t103": {
+          "ticket": "I'm annoyed. The app logged me out and now my password doesn't work.",
+          "gold": {
+            "category": "account",
+            "escalate": false,
+            "required_facts": [
+              "60 minutes"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "password_reset"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you're frustrated. According to our policy, please update to the latest app version and restart. If the issue persists, send your device model and OS version for further investigation.\n\nNext step: Provide your device and OS det"
+          }
+        },
+        "t105": {
+          "ticket": "The smoke detector I ordered beeps constantly even with a new battery. Is it defective?",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "safety_legal",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": true,
+            "escalated_by": "safety_rule",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m02": {
+          "ticket": "Order #2290. Both charges are still on my card.",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "3-5 business days"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "billing_duplicate"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m04": {
+          "ticket": "I don't see a Billing option in Settings on the app.",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Billing"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "billing_subscription"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you're having trouble finding the Billing option. Ensure your app is up to date or send your device and OS details for further assistance. You can still cancel anytime via the updated app under Settings > Billing. \n\nCheck for u"
+          }
+        },
+        "m05": {
+          "ticket": "Photo attached. How long until the replacement arrives?",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for sharing the photo. Based on our policy, we will send a free replacement via standard shipping, which usually takes 3-5 business days. A tracking email will be sent once it ships.\n\nNext, we will process your request and send th"
+          }
+        },
+        "m10": {
+          "ticket": "It's been 3 hours. Can you make an exception just this once?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you'd like to change your order. Our policy allows changes within 1 hour of placing them under Account > Orders. Since it's been 3 hours, your order has shipped and cannot be altered. \n\nNext step: Please contact us if you need "
+          }
+        },
+        "m12": {
+          "ticket": "Actually one more thing, when do my rewards points post?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your Northwind Rewards points will post 14 days after the delivery date and are valid for 12 months. Please let us know if you need any further assistance."
+          }
+        },
+        "m14": {
+          "ticket": "Samsung S22, Android 14. Please help, I need to track my order.",
+          "gold": {
+            "category": "technical",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "app_crash"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": true,
+            "escalated_by": "repeat_contact",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m15": {
+          "ticket": "I KNOW. I did. This is the third time I'm explaining this.",
+          "gold": {
+            "category": "billing",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "promo_codes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "repeat_contact",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        }
+      },
+      "errors": 0,
+      "seconds": 1389.7,
+      "n": 125,
+      "repeats": 1,
+      "config": {
+        "model": "ollama:qwen2.5:7b",
+        "prompt": "reply_v1_baseline",
+        "judge": "ollama:qwen2.5:7b"
+      }
+    },
+    "ollama:qwen2.5:7b+reply_v4_grounded": {
+      "metrics": {
+        "actionable": 0.9412,
+        "category_accuracy": 0.832,
+        "draft_commitment_free": 0.9519,
+        "empathy": 0.8958,
+        "escalation_correct": 0.976,
+        "escalation_recall": 1.0,
+        "first_try_clean": 0.9519,
+        "followup_not_repeated": 1.0,
+        "judge_answers_question": 0.951,
+        "judge_grounded": 0.8627,
+        "judge_no_invented_commitments": 0.8431,
+        "judge_tone_ok": 1.0,
+        "length_ok": 1.0,
+        "no_invented_commitments": 1.0,
+        "no_repeat_questions": 1.0,
+        "policy_grounded": 0.7841,
+        "quality": 0.9184,
+        "retrieval_recall": 0.9785,
+        "safety": 1.0
+      },
+      "spread": {
+        "actionable": 0.0,
+        "category_accuracy": 0.0,
+        "draft_commitment_free": 0.0,
+        "empathy": 0.0,
+        "escalation_correct": 0.0,
+        "escalation_recall": 0.0,
+        "first_try_clean": 0.0,
+        "followup_not_repeated": 0.0,
+        "judge_answers_question": 0.0,
+        "judge_grounded": 0.0,
+        "judge_no_invented_commitments": 0.0,
+        "judge_tone_ok": 0.0,
+        "length_ok": 0.0,
+        "no_invented_commitments": 0.0,
+        "no_repeat_questions": 0.0,
+        "policy_grounded": 0.0,
+        "quality": 0.0,
+        "retrieval_recall": 0.0,
+        "safety": 0.0
+      },
+      "tickets": {
+        "t01": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t02": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t03": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t04": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t05": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t06": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t07": {
+          "scores": {
+            "quality": 0.65
+          }
+        },
+        "t08": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t09": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t10": {
+          "scores": {
+            "quality": 0.7826086956521738
+          }
+        },
+        "t11": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t12": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t13": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t14": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t15": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t16": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t17": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t18": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t19": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t20": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t21": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t22": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t23": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t24": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t25": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t26": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t27": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t28": {
+          "scores": {
+            "quality": 0.8888888888888888
+          }
+        },
+        "t29": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t30": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t31": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t32": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t33": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t34": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t35": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t36": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t37": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t38": {
+          "scores": {
+            "quality": 0.8750000000000001
+          }
+        },
+        "t39": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t40": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t41": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t42": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t43": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t44": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t45": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t46": {
+          "scores": {
+            "quality": 0.7826086956521738
+          }
+        },
+        "t47": {
+          "scores": {
+            "quality": 0.7826086956521738
+          }
+        },
+        "t48": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t49": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t50": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t51": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t52": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t53": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t54": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t55": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t56": {
+          "scores": {
+            "quality": 0.775
+          }
+        },
+        "t57": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t58": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t59": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t60": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t61": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t62": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t63": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t64": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t65": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t66": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t67": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t68": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t69": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t70": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t71": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t72": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t73": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t74": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t75": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t76": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t77": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t78": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t79": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t80": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t81": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t82": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t83": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t84": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t85": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t86": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t87": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t88": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t89": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t90": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t91": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t92": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t93": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t94": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t95": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t96": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t97": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t98": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t99": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t100": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t101": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t102": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t103": {
+          "scores": {
+            "quality": 0.6521739130434782
+          }
+        },
+        "t104": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t105": {
+          "scores": {
+            "quality": 0.4
+          }
+        },
+        "m01": {
+          "scores": {
+            "quality": 0.6666666666666666
+          }
+        },
+        "m02": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m03": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m04": {
+          "scores": {
+            "quality": 0.6190476190476191
+          }
+        },
+        "m05": {
+          "scores": {
+            "quality": 0.8125
+          }
+        },
+        "m06": {
+          "scores": {
+            "quality": 0.8421052631578947
+          }
+        },
+        "m07": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m08": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m09": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m10": {
+          "scores": {
+            "quality": 0.6190476190476191
+          }
+        },
+        "m11": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m12": {
+          "scores": {
+            "quality": 0.8571428571428572
+          }
+        },
+        "m13": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m14": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m15": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m16": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m17": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m18": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m19": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m20": {
+          "scores": {
+            "quality": 1.0
+          }
+        }
+      },
+      "perf": {
+        "latency_known_for": 125.0,
+        "max_tokens_per_ticket": 1655.0,
+        "mean_calls_per_ticket": 1.9,
+        "mean_tokens_per_ticket": 1072.9,
+        "p50_model_ms_per_ticket": 8282.0,
+        "p50_wall_ms_per_ticket": 10846.0,
+        "p95_model_ms_per_ticket": 14806.0,
+        "p95_wall_ms_per_ticket": 17269.0,
+        "tickets": 125.0
+      },
+      "qa_caught_first_draft": {
+        "invented menu path": 1,
+        "invented timeline": 6
+      },
+      "misses": {
+        "t31": {
+          "ticket": "I am FURIOUS. Third time I'm writing about my broken blender and I want a manager immediately.",
+          "gold": {
+            "category": "returns",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t50": {
+          "ticket": "I ordered the wrong size 20 minutes ago. Can I change my order to a large?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour",
+              "Account > Orders"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your order can be changed or cancelled within 1 hour of placing it. Since you placed your order 20 minutes ago, you can still make the change through Account > Orders.\n\nNext step: Go to Account > Orders and modify your order there."
+          }
+        },
+        "t51": {
+          "ticket": "Please cancel my order, I ordered it by mistake yesterday.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for reaching out. According to our policy, you can cancel your order within the first hour of placing it under Account > Orders. Since your order was placed over an hour ago, it needs to be returned once it arrives.\n\nNext step: Re"
+          }
+        },
+        "t52": {
+          "ticket": "Can I add an item to an order I placed this morning?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "other",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Sure, since you placed your order this morning, you can still add an item. Go to Account > Orders and make the change.\n\nNext step: Log into your account and update your order."
+          }
+        },
+        "t61": {
+          "ticket": "I bought a coat last week and now it's on sale for $30 less. Can I get the difference back?",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "price_adjustment"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for bringing this to our attention. According to our policy, if the item was purchased within 14 days and is unused with original packaging, you may receive a refund for the price difference. The refund will be processed within 5-"
+          }
+        },
+        "t80": {
+          "ticket": "I'm getting way too many marketing emails. How do I stop them?",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "unsubscribe"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "notifications"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "To stop receiving marketing emails, please go to Settings > Notifications and adjust your preferences. If you prefer, you can also find the unsubscribe link at the bottom of any marketing email. Next, check your settings."
+          }
+        },
+        "t81": {
+          "ticket": "How do I turn off push notifications for order updates?",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Notifications"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "notifications"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "To turn off push notifications for order updates, go to Settings > Notifications and\u8c03\u6574\u8bbe\u7f6e\u4e2d\u7684\u901a\u77e5\u9009\u9879\u3002\u8425\u9500\u90ae\u4ef6\u5e95\u90e8\u4e5f\u6709\u9000\u8ba2\u94fe\u63a5\uff0c\u5982\u6709\u9700\u8981\u53ef\u4e00\u5e76\u8bbe\u7f6e\u3002\n\n\u8bf7\u767b\u5f55\u60a8\u7684\u8d26\u6237\uff0c\u8fdb\u5165\u8bbe\u7f6e\u9875\u9762\uff0c\u8c03\u6574\u901a\u77e5\u9009\u9879\u5373\u53ef\u3002"
+          }
+        },
+        "t82": {
+          "ticket": "I checked out as a guest and now my order isn't showing in my account.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Find an order"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "guest_orders"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your order isn't showing because it was placed as a guest. Add it under Account > Orders > Find an order, using the order number and email provided. If there's a website error, try clearing your cache or send us the page link and a screensh"
+          }
+        },
+        "t83": {
+          "ticket": "I can't see my order from last month in my account. Order #3390.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Find an order"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "guest_orders"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for your inquiry. According to our policy, guest orders don't appear automatically in your account. You can add your order #3390 by going to Account > Orders > Find an order, using your order number and email.\n\nPlease try this nex"
+          }
+        },
+        "t84": {
+          "ticket": "When do my rewards points show up after I buy something?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your rewards points will be added to your account 14 days after your order's delivery date. Points expire 12 months after issuance unless you make another purchase. You can check your points balance in the 'Account' section under 'Rewards'."
+          }
+        },
+        "t85": {
+          "ticket": "Do my loyalty points expire?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "12 months"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Hi there, your loyalty points are valid for 12 months from when they were awarded, but they require a purchase within that time to be kept active. \n\nNext step: Review your account activity or log in to check the expiration status. If you ha"
+          }
+        },
+        "t86": {
+          "ticket": "Does a Northwind gift card expire? I got one two years ago.",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "never expire"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "gift_cards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your Northwind gift card does not expire and can be used for any order. Since it was issued two years ago, you can still use it. If you need to sign in, identity verification typically takes 2-3 business days. Please check your account and "
+          }
+        },
+        "t87": {
+          "ticket": "Can I get cash back for the rest of my gift card balance?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "exchanged for cash"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "gift_cards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you\u2019d like to use your gift card for the rest of your order. According to our policy, gift cards can be used on any order but cannot be exchanged for cash. \n\nNext step: Use the remaining balance on your gift card for your curre"
+          }
+        },
+        "t100": {
+          "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t102": {
+          "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "high",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t103": {
+          "ticket": "I'm annoyed. The app logged me out and now my password doesn't work.",
+          "gold": {
+            "category": "account",
+            "escalate": false,
+            "required_facts": [
+              "60 minutes"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "password_reset"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you're frustrated. According to our policy, please update to the latest app version and restart. If the issue persists, send your device model and OS version for further assistance.\n\nContact us with this information to proceed."
+          }
+        },
+        "t105": {
+          "ticket": "The smoke detector I ordered beeps constantly even with a new battery. Is it defective?",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "safety_legal",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": true,
+            "escalated_by": "safety_rule",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m04": {
+          "ticket": "I don't see a Billing option in Settings on the app.",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Billing"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "billing_subscription"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I'm sorry you're having trouble finding Billing settings. Try updating your app and restarting. If that doesn't work, please send your device model and OS version for further investigation.\n\nNext step: Send your device model and OS version "
+          }
+        },
+        "m05": {
+          "ticket": "Photo attached. How long until the replacement arrives?",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your item is covered by a 12-month warranty. Once you've shared a photo, a replacement will be sent via standard shipping in 3-5 business days or express in 1-2 business days. A tracking email will be sent upon shipment.\n\nYou can choose the"
+          }
+        },
+        "m10": {
+          "ticket": "It's been 3 hours. Can you make an exception just this once?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Hello, I understand you'd like to change your order, but our policy allows this only within the first hour after placing it under Account > Orders. Since it's been 3 hours, we cannot make changes at this time.\n\nIf you haven't already, you c"
+          }
+        },
+        "m12": {
+          "ticket": "Actually one more thing, when do my rewards points post?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Your Northwind Rewards points will post 14 days after your order's delivery date. They expire if not used within 12 months from that date. For more details, you can view your account settings or support articles on our site.\n\nPlease check y"
+          }
+        },
+        "m14": {
+          "ticket": "Samsung S22, Android 14. Please help, I need to track my order.",
+          "gold": {
+            "category": "technical",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "app_crash"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": true,
+            "escalated_by": "repeat_contact",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m15": {
+          "ticket": "I KNOW. I did. This is the third time I'm explaining this.",
+          "gold": {
+            "category": "billing",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "promo_codes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "repeat_contact",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        }
+      },
+      "errors": 0,
+      "seconds": 1262.7,
+      "n": 125,
+      "repeats": 1,
+      "config": {
+        "model": "ollama:qwen2.5:7b",
+        "prompt": "reply_v4_grounded",
+        "judge": "ollama:qwen2.5:7b"
+      }
+    },
+    "ollama:llama3.2+reply_v4_grounded": {
+      "metrics": {
+        "actionable": 0.7391,
+        "category_accuracy": 0.808,
+        "draft_commitment_free": 0.9468,
+        "empathy": 0.9792,
+        "escalation_correct": 0.896,
+        "escalation_recall": 1.0,
+        "first_try_clean": 0.8936,
+        "followup_not_repeated": 1.0,
+        "judge_answers_question": 0.8804,
+        "judge_grounded": 0.7174,
+        "judge_no_invented_commitments": 0.6593,
+        "judge_tone_ok": 0.913,
+        "length_ok": 1.0,
+        "no_invented_commitments": 1.0,
+        "no_repeat_questions": 1.0,
+        "policy_grounded": 0.7848,
+        "quality": 0.8874,
+        "retrieval_recall": 0.9821,
+        "safety": 1.0
+      },
+      "spread": {
+        "actionable": 0.0,
+        "category_accuracy": 0.0,
+        "draft_commitment_free": 0.0,
+        "empathy": 0.0,
+        "escalation_correct": 0.0,
+        "escalation_recall": 0.0,
+        "first_try_clean": 0.0,
+        "followup_not_repeated": 0.0,
+        "judge_answers_question": 0.0,
+        "judge_grounded": 0.0,
+        "judge_no_invented_commitments": 0.0,
+        "judge_tone_ok": 0.0,
+        "length_ok": 0.0,
+        "no_invented_commitments": 0.0,
+        "no_repeat_questions": 0.0,
+        "policy_grounded": 0.0,
+        "quality": 0.0,
+        "retrieval_recall": 0.0,
+        "safety": 0.0
+      },
+      "tickets": {
+        "t01": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t02": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t03": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t04": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t05": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t06": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t07": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t08": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t09": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t10": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t11": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t12": {
+          "scores": {
+            "quality": 0.7826086956521738
+          }
+        },
+        "t13": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t14": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t15": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t16": {
+          "scores": {
+            "quality": 0.8666666666666667
+          }
+        },
+        "t17": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t18": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t19": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t20": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t21": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t22": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t23": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t24": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t25": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t26": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t27": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t28": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t29": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t30": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t31": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t32": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t33": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t34": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t35": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t36": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t37": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t38": {
+          "scores": {
+            "quality": 0.8750000000000001
+          }
+        },
+        "t39": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t40": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t41": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t42": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t43": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t44": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t45": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t46": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t47": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t48": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t49": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t50": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t51": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t52": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t53": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t54": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t55": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t56": {
+          "scores": {
+            "quality": 0.8750000000000001
+          }
+        },
+        "t57": {
+          "scores": {
+            "quality": 0.6956521739130433
+          }
+        },
+        "t58": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t59": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t60": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t61": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t62": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t63": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t64": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t65": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t66": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t67": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t68": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t69": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t70": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t71": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t72": {
+          "scores": {
+            "quality": 0.9130434782608697
+          }
+        },
+        "t73": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t74": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t75": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t76": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t77": {
+          "scores": {
+            "quality": 0.9000000000000001
+          }
+        },
+        "t78": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t79": {
+          "scores": {
+            "quality": 0.8695652173913042
+          }
+        },
+        "t80": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t81": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t82": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t83": {
+          "scores": {
+            "quality": 0.6
+          }
+        },
+        "t84": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t85": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t86": {
+          "scores": {
+            "quality": 0.8500000000000001
+          }
+        },
+        "t87": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t88": {
+          "scores": {
+            "quality": 0.75
+          }
+        },
+        "t89": {
+          "scores": {
+            "quality": 0.8666666666666667
+          }
+        },
+        "t90": {
+          "scores": {
+            "quality": 0.7999999999999999
+          }
+        },
+        "t91": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t92": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t93": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t94": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t95": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t96": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t97": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t98": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t99": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t100": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "t101": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t102": {
+          "scores": {
+            "quality": 0.7
+          }
+        },
+        "t103": {
+          "scores": {
+            "quality": 0.6521739130434782
+          }
+        },
+        "t104": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "t105": {
+          "scores": {
+            "quality": 0.4
+          }
+        },
+        "m01": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m02": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m03": {
+          "scores": {
+            "quality": 0.7619047619047619
+          }
+        },
+        "m04": {
+          "scores": {
+            "quality": 0.8571428571428572
+          }
+        },
+        "m05": {
+          "scores": {
+            "quality": 0.8125
+          }
+        },
+        "m06": {
+          "scores": {
+            "quality": 0.894736842105263
+          }
+        },
+        "m07": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m08": {
+          "scores": {
+            "quality": 0.875
+          }
+        },
+        "m09": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m10": {
+          "scores": {
+            "quality": 0.8571428571428572
+          }
+        },
+        "m11": {
+          "scores": {
+            "quality": 0.875
+          }
+        },
+        "m12": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m13": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m14": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m15": {
+          "scores": {
+            "quality": 0.7692307692307694
+          }
+        },
+        "m16": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m17": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m18": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m19": {
+          "scores": {
+            "quality": 1.0
+          }
+        },
+        "m20": {
+          "scores": {
+            "quality": 0.9047619047619049
+          }
+        }
+      },
+      "perf": {
+        "latency_known_for": 125.0,
+        "max_tokens_per_ticket": 1716.0,
+        "mean_calls_per_ticket": 1.8,
+        "mean_tokens_per_ticket": 1100.5,
+        "p50_model_ms_per_ticket": 4319.0,
+        "p50_wall_ms_per_ticket": 9195.0,
+        "p95_model_ms_per_ticket": 8970.0,
+        "p95_wall_ms_per_ticket": 14894.0,
+        "tickets": 125.0
+      },
+      "qa_caught_first_draft": {
+        "contains an unfilled placeholder": 6,
+        "forbidden phrase": 1,
+        "invented timeline": 7
+      },
+      "misses": {
+        "t06": {
+          "ticket": "How do I cancel my subscription? I don't want it to renew next month.",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Billing"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "billing_subscription"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand your situation and apologize if the renewal dates are causing any inconvenience. According to our policy notes, you can cancel your subscription at any time by accessing Settings > Billing. The policy states that access will co"
+          }
+        },
+        "t22": {
+          "ticket": "Urgent: I'm locked out of my account and I have a presentation in an hour, please help ASAP.",
+          "gold": {
+            "category": "account",
+            "escalate": false,
+            "required_facts": [
+              "30 minutes"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "account_lockout",
+              "password_reset"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t27": {
+          "ticket": "Do you ship internationally? What does it cost?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "US and Canada"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "international_shipping"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "other",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "We understand your question about international shipping and the cost involved. As per our policy, we only ship to the US and Canada, and there is no domestic international shipping option. The flat rate shipping fee for Canadian orders is "
+          }
+        },
+        "t28": {
+          "ticket": "Everything is broken! The app, the site, my login, all of it. Nothing works.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": []
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t29": {
+          "ticket": "Refund please. Order 8832, card 4111 1111 1111 1111 was charged.",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [
+              "5-7 business days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "refund_window"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t32": {
+          "ticket": "My order just arrived and the lamp shade is smashed. The box was crushed too.",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [
+              "48 hours",
+              "free replacement"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "damaged_in_transit"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t34": {
+          "ticket": "You sent me the wrong color. I ordered navy and got bright green.",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [
+              "prepaid return label"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "wrong_item"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t35": {
+          "ticket": "Order #5520 came with someone else's item, not what I ordered at all.",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [
+              "prepaid return label"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "wrong_item"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t43": {
+          "ticket": "My headphones are defective, the left side cut out after a month. Can you send new ones fast? I travel Friday.",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [
+              "photo"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t45": {
+          "ticket": "Can you upgrade my order to express for free? It's a birthday gift.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1-2 business days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "other",
+            "urgency": "low",
+            "sentiment": "positive",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand that you're celebrating a special occasion and wanted to upgrade your order to express for free. However, our policy notes state that express shipping is not a complimentary service. To upgrade to express, you can choose the ex"
+          }
+        },
+        "t50": {
+          "ticket": "I ordered the wrong size 20 minutes ago. Can I change my order to a large?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour",
+              "Account > Orders"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I apologize that you received the wrong size and you're now looking to change your order to a large. According to our policy, orders can be changed or cancelled within 1 hour of placing them. Since it's been over 20 minutes, but less than a"
+          }
+        },
+        "t51": {
+          "ticket": "Please cancel my order, I ordered it by mistake yesterday.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "returns",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you are frustrated as your order was placed yesterday by mistake and you'd like to cancel it. However, according to our policy, orders can be cancelled only within 1 hour of placing them, which in your case has already passed. "
+          }
+        },
+        "t52": {
+          "ticket": "Can I add an item to an order I placed this morning?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "We acknowledge the issue with your morning order and apologize for the inconvenience. Unfortunately, since it's more than 1 hour since you placed the order, it's no longer possible to add any items. According to our policy, orders can be ch"
+          }
+        },
+        "t62": {
+          "ticket": "Another store sells the same blender for cheaper. Will you price match?",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "not offered"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "price_adjustment"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "other",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand that you'd like to know if Northwind Goods will price match a lower price found on the same product at another store. Unfortunately, our policy does not offer price matching with other stores. However, the policy does offer a r"
+          }
+        },
+        "t79": {
+          "ticket": "I get 'Something went wrong' when I try to check out on the website. So annoying.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "private window"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "site_error"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Hello, I understand that you're experiencing issues with the website's checkout process, which can be really frustrating. According to our policy notes, if you encounter an error, you should clear your browser cache and try again in a priva"
+          }
+        },
+        "t80": {
+          "ticket": "I'm getting way too many marketing emails. How do I stop them?",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "unsubscribe"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "notifications"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "low",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I apologize for the inconvenience you're experiencing with the marketing emails. I can understand why you'd want to manage your inbox. \n\nTo turn off marketing emails, you'll need to go to Settings > Notifications, and toggle off the notific"
+          }
+        },
+        "t81": {
+          "ticket": "How do I turn off push notifications for order updates?",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Notifications"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "notifications"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "We understand that you're looking to turn off push notifications for order updates and it's frustrating to receive them in-between updates. \n\nAccording to our policy, marketing emails include an unsubscribe link at the bottom, and turning o"
+          }
+        },
+        "t82": {
+          "ticket": "I checked out as a guest and now my order isn't showing in my account.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Find an order"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "guest_orders"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand that being unable to see your order in your account is frustrating. According to our policy, since the website displays an error and you're using a private window, our next step would be for you to send us the page link and a s"
+          }
+        },
+        "t83": {
+          "ticket": "I can't see my order from last month in my account. Order #3390.",
+          "gold": {
+            "category": "technical",
+            "escalate": false,
+            "required_facts": [
+              "Find an order"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "guest_orders"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Thank you for following up with us about your order #3390. I understand that you're unable to find your order in your account, and I empathize with your frustration. However, I'd like to inform you that the policy states that orders placed "
+          }
+        },
+        "t84": {
+          "ticket": "When do my rewards points show up after I buy something?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "14 days"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "Hello, I understand that you're waiting for your rewards points to be credited after making a purchase. Unfortunately, our policy states that Northwind Rewards points post 14 days after delivery. However, they expire after 12 months without"
+          }
+        },
+        "t85": {
+          "ticket": "Do my loyalty points expire?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "12 months"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "rewards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "We understand that you're wondering about the status of your loyalty points. We acknowledge that 14 days have passed since your delivery. According to our policy notes, points are actually posted to your account 14 days after delivery. Sinc"
+          }
+        },
+        "t86": {
+          "ticket": "Does a Northwind gift card expire? I got one two years ago.",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "never expire"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "gift_cards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand your concern about losing your two-year-old Northwind gift card. According to our policy, gift cards never expire and can still be used on any order. There is no expiration date or usage limit. \n\nYou can use your gift card to m"
+          }
+        },
+        "t87": {
+          "ticket": "Can I get cash back for the rest of my gift card balance?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [
+              "exchanged for cash"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "gift_cards"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "normal",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you're looking for cash back on your remaining gift card balance. However, our policy is clear: gift cards never expire and can be used on any order, but they cannot be exchanged for cash. This is stated in our policy notes. As"
+          }
+        },
+        "t90": {
+          "ticket": "Do you offer student discounts?",
+          "gold": {
+            "category": "other",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": []
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you're interested in our student discount policy, but our policy notes don't appear to offer any student discounts. The policy notes state that we don't have a specific student discount policy in place. If you're a student, you"
+          }
+        },
+        "t100": {
+          "ticket": "I'm a bit frustrated that my order is late, but no rush, whenever you can check is fine.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "low",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t102": {
+          "ticket": "My order is late and I need it for an event on Saturday. Can you check on it?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "shipping_times"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "high",
+            "sentiment": "frustrated",
+            "escalated": true,
+            "escalated_by": "qa",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "t103": {
+          "ticket": "I'm annoyed. The app logged me out and now my password doesn't work.",
+          "gold": {
+            "category": "account",
+            "escalate": false,
+            "required_facts": [
+              "60 minutes"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "password_reset"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand your frustration with the app logging you out and your password not working. I'm here to help you with this issue. According to our warranty policy, this is not covered under the 12-month warranty against defects. Our policy st"
+          }
+        },
+        "t105": {
+          "ticket": "The smoke detector I ordered beeps constantly even with a new battery. Is it defective?",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "safety_legal",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": true,
+            "escalated_by": "safety_rule",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m01": {
+          "ticket": "Sure, it's order #8125. Tracking hasn't changed in 8 days.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "7 days"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "lost_package"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m02": {
+          "ticket": "Order #2290. Both charges are still on my card.",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "3-5 business days"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "billing_duplicate"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m04": {
+          "ticket": "I don't see a Billing option in Settings on the app.",
+          "gold": {
+            "category": "billing",
+            "escalate": false,
+            "required_facts": [
+              "Settings > Billing"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "billing_subscription"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand you're frustrated that you don't see a Billing option in Settings on the app. However, according to our policy notes, you can cancel any time under Settings > Billing. Access continues until the end of the paid period. It's als"
+          }
+        },
+        "m05": {
+          "ticket": "Photo attached. How long until the replacement arrives?",
+          "gold": {
+            "category": "returns",
+            "escalate": false,
+            "required_facts": [],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "warranty"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "low",
+            "sentiment": "neutral",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand that you're concerned about receiving your replacement blender, and I apologize again for the delay. However, our policy notes clearly state that standard shipping takes 3-5 business days and express takes 1-2 business days. Ad"
+          }
+        },
+        "m09": {
+          "ticket": "It's been two days now and nobody has it.",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "carrier investigation"
+            ],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "delivered_not_received"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 1,
+            "wrong_category": 0,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "shipping",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "triage",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m10": {
+          "ticket": "It's been 3 hours. Can you make an exception just this once?",
+          "gold": {
+            "category": "shipping",
+            "escalate": false,
+            "required_facts": [
+              "1 hour"
+            ],
+            "needs_empathy": false,
+            "relevant_policies": [
+              "order_changes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "account",
+            "urgency": "normal",
+            "sentiment": "frustrated",
+            "escalated": false,
+            "escalated_by": "",
+            "error": "",
+            "reply": "I understand your situation, and I apologize for the inconvenience. However, according to our policy, orders can be changed or cancelled within 1 hour of placing them under Account > Orders. Since 3 hours have passed, changes to the order a"
+          }
+        },
+        "m13": {
+          "ticket": "Order #4410. This is my third message and still nothing.",
+          "gold": {
+            "category": "returns",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "refund_window"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "billing",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "repeat_contact",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        },
+        "m15": {
+          "ticket": "I KNOW. I did. This is the third time I'm explaining this.",
+          "gold": {
+            "category": "billing",
+            "escalate": true,
+            "required_facts": [],
+            "needs_empathy": true,
+            "relevant_policies": [
+              "promo_codes"
+            ]
+          },
+          "counts": {
+            "missed_escalation": 0,
+            "over_escalation": 0,
+            "wrong_category": 1,
+            "error": 0
+          },
+          "repeats": 1,
+          "example": {
+            "category": "technical",
+            "urgency": "high",
+            "sentiment": "angry",
+            "escalated": true,
+            "escalated_by": "repeat_contact",
+            "error": "",
+            "reply": "I'm sorry about this. I've passed your case to a specialist on our senior team, who will contact you within 1 business day. - Northwind Support"
+          }
+        }
+      },
+      "errors": 0,
+      "seconds": 1015.9,
+      "n": 125,
+      "repeats": 1,
+      "config": {
+        "model": "ollama:llama3.2",
+        "prompt": "reply_v4_grounded",
+        "judge": "ollama:qwen2.5:7b"
+      }
+    }
+  },
+  "verdicts": {
+    "ollama:qwen2.5:7b+reply_v4_grounded": {
+      "passed": true,
+      "failed_metrics": []
+    },
+    "ollama:llama3.2+reply_v4_grounded": {
+      "passed": false,
+      "failed_metrics": [
+        "actionable",
+        "escalation_correct",
+        "judge_grounded",
+        "judge_tone_ok",
+        "judge_no_invented_commitments"
+      ]
+    }
+  },
+  "judge": "ollama:qwen2.5:7b",
+  "experiments": {}
+}

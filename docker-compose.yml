@@ -1,0 +1,32 @@
+# Free, local stack: the API plus a local model served by Ollama.
+#   cp .env.example .env            # set CX_API_KEYS (and LangSmith if you want traces)
+#   docker compose up -d
+#   docker compose exec ollama ollama pull qwen2.5:7b      # or llama3.2 on an 8 GB machine
+services:
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+  api:
+    build: .
+    depends_on:
+      - ollama
+    ports:
+      - "127.0.0.1:8000:8000"      # bound to localhost; put a TLS proxy in front to expose it
+    env_file: .env
+    environment:
+      CX_ENV: prod
+      CX_MODEL: ${CX_MODEL:-ollama:qwen2.5:7b}
+      OLLAMA_BASE_URL: http://ollama:11434/v1
+      CX_MAX_CONCURRENCY: ${CX_MAX_CONCURRENCY:-2}
+      CX_REVIEW_MODE: ${CX_REVIEW_MODE:-risky}     # a person checks risky replies before they go out
+      CX_CHECKPOINT_PATH: /data/checkpoints.db
+    volumes:
+      - cxdata:/data
+    restart: unless-stopped
+
+volumes:
+  ollama:
+  cxdata:

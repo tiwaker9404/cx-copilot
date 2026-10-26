@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - name: Unit, service and API tests
+        run: pytest -q
+      - name: Regression gate and budgets (offline stand-in model)
+        run: cx-gate
+      - name: Retrieval eval
+        run: cx-retrieval
+      - name: Judge calibration plumbing (offline stand-in judge)
+        run: cx-judge
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eval-reports
+          path: evals/*.md
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t cx-copilot:ci .
+      - name: Boot it and check health
+        run: |
+          docker run -d --name cx -p 8000:8000 -e CX_ENV=dev cx-copilot:ci
+          for i in $(seq 1 30); do curl -sf localhost:8000/healthz && break; sleep 1; done
+          curl -sf -X POST localhost:8000/v1/tickets -H 'content-type: application/json' \
+               -d '{"text":"I was charged twice"}'
+          docker logs cx
+      - name: Review mode survives a restart
+        run: |
+          docker run -d --name cxr -p 8001:8000 -e CX_ENV=dev -e CX_REVIEW_MODE=all -v cxr:/data cx-copilot:ci
+          for i in $(seq 1 30); do curl -sf localhost:8001/healthz && break; sleep 1; done
+          curl -sf -X POST localhost:8001/v1/tickets -H 'content-type: application/json' \
+               -d '{"text":"How do I cancel my subscription?","ticket_id":"ci1"}' | grep -q pending_review
+          docker restart cxr
+          for i in $(seq 1 30); do curl -sf localhost:8001/healthz && break; sleep 1; done
+          curl -sf -X POST localhost:8001/v1/tickets/ci1/review -H 'content-type: application/json' \
+               -d '{"action":"approve"}' | grep -q '"status":"ok"'
+          docker logs cxr

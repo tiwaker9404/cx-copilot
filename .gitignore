@@ -1,0 +1,13 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+.env
+.cx_cache/
+/data/
+cx-results.zip
+evals/candidates.jsonl
+evals/full_eval.log
