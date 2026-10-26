@@ -1,0 +1,137 @@
+[
+  {
+    "id": "refund_window",
+    "category": "returns",
+    "keywords": [
+      "refund",
+      "return",
+      "money back",
+      "exchange",
+      "send back"
+    ],
+    "text": "Refunds are available within 30 days of delivery for unused items in original packaging. Approved refunds go back to the original payment method in 5-7 business days."
+  },
+  {
+    "id": "warranty",
+    "category": "returns",
+    "keywords": [
+      "broken",
+      "defective",
+      "damaged",
+      "cracked",
+      "warranty",
+      "stopped working",
+      "doesn't work"
+    ],
+    "text": "Items are covered by a 12-month warranty against defects. We send a free replacement once you share a photo of the defect."
+  },
+  {
+    "id": "shipping_times",
+    "category": "shipping",
+    "keywords": [
+      "shipping",
+      "delivery",
+      "arrive",
+      "tracking",
+      "how long"
+    ],
+    "text": "Standard shipping takes 3-5 business days and express takes 1-2 business days. A tracking email is sent when your order ships."
+  },
+  {
+    "id": "lost_package",
+    "category": "shipping",
+    "keywords": [
+      "lost",
+      "missing",
+      "never arrived",
+      "stuck",
+      "hasn't moved",
+      "hasn't updated"
+    ],
+    "text": "If tracking shows no movement for 7 days, we reissue the order or refund it in full. Please contact us within 30 days of the ship date."
+  },
+  {
+    "id": "delivered_not_received",
+    "category": "shipping",
+    "keywords": [
+      "delivered",
+      "never got",
+      "didn't receive",
+      "not received"
+    ],
+    "text": "If tracking says delivered but nothing arrived, check with neighbors and household members for 24 hours, then contact us and we will open a carrier investigation."
+  },
+  {
+    "id": "billing_duplicate",
+    "category": "billing",
+    "keywords": [
+      "charged twice",
+      "double charge",
+      "duplicate",
+      "twice",
+      "pending"
+    ],
+    "text": "Confirmed duplicate charges are reversed within 3-5 business days. A pending authorization drops off automatically within 5 days."
+  },
+  {
+    "id": "billing_subscription",
+    "category": "billing",
+    "keywords": [
+      "cancel",
+      "subscription",
+      "renew",
+      "membership"
+    ],
+    "text": "You can cancel any time under Settings > Billing. Access continues until the end of the paid period."
+  },
+  {
+    "id": "password_reset",
+    "category": "account",
+    "keywords": [
+      "password",
+      "locked out",
+      "log in",
+      "login",
+      "sign in"
+    ],
+    "text": "Use Forgot password on the sign-in page. The reset link expires after 60 minutes."
+  },
+  {
+    "id": "email_change",
+    "category": "account",
+    "keywords": [
+      "change the email",
+      "change my email",
+      "change email",
+      "update my email",
+      "update email",
+      "new email",
+      "old email"
+    ],
+    "text": "Changing the email on an account requires a verification code sent to the current email address."
+  },
+  {
+    "id": "app_crash",
+    "category": "technical",
+    "keywords": [
+      "crash",
+      "freez",
+      "won't open",
+      "not loading",
+      "app"
+    ],
+    "text": "Update to the latest app version and restart. If the problem continues, send your device model and OS version so engineering can investigate."
+  },
+  {
+    "id": "site_error",
+    "category": "technical",
+    "keywords": [
+      "website",
+      "check out",
+      "checkout",
+      "error",
+      "browser"
+    ],
+    "text": "If the website shows an error, clear your browser cache and try again in a private window. If it persists, send us the page link and a screenshot."
+  }
+]
