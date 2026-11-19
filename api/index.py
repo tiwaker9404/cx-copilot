@@ -22,15 +22,29 @@ from cx_copilot.api import configure_logging, create_app  # noqa: E402
 configure_logging(os.environ.get("CX_LOG_LEVEL", "INFO"))
 _app = create_app()
 
+from urllib.parse import parse_qsl, urlencode  # noqa: E402
+
 _PREFIX = "/api/index"
 
 
+def _original_path(scope) -> tuple[str, bytes] | None:
+    """vercel.json rewrites every request to /api/index?__path=/<original path>. Recover the
+    path the visitor asked for and drop the helper parameter from the query string."""
+    pairs = parse_qsl(scope.get("query_string", b"").decode("latin-1"), keep_blank_values=True)
+    path = next((v for k, v in pairs if k == "__path"), None)
+    if path is None:
+        p = scope.get("path", "")
+        if p == _PREFIX or p.startswith(_PREFIX + "/"):
+            return (p[len(_PREFIX):] or "/"), scope.get("query_string", b"")
+        return None
+    rest = urlencode([(k, v) for k, v in pairs if k != "__path"]).encode("latin-1")
+    return (path if path.startswith("/") else "/" + path), rest
+
+
 async def app(scope, receive, send):
-    """vercel.json rewrites every path to /api/index. Some runtimes hand the function that
-    rewritten path instead of the one the visitor asked for, so map it back before routing."""
     if scope.get("type") in ("http", "websocket"):
-        path = scope.get("path", "")
-        if path == _PREFIX or path.startswith(_PREFIX + "/"):
-            new_path = path[len(_PREFIX):] or "/"
-            scope = dict(scope, path=new_path, raw_path=new_path.encode())
+        found = _original_path(scope)
+        if found:
+            path, query = found
+            scope = dict(scope, path=path, raw_path=path.encode(), query_string=query)
     await _app(scope, receive, send)
