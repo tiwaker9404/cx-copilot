@@ -14,7 +14,7 @@ os.environ.setdefault("CX_DB_PATH", "/tmp/cx.db")
 os.environ.setdefault("CX_CHECKPOINT_PATH", "/tmp/checkpoints.db")
 os.environ.setdefault("CX_RATE_LIMIT_PER_MIN", "30")
 if "CX_MODEL" not in os.environ:
-    gateway_model = os.environ.get("CX_GATEWAY_MODEL", "deepseek/deepseek-v4.1-flash-1017")
+    gateway_model = os.environ.get("CX_GATEWAY_MODEL", "tencent/hy4-flash")
     os.environ["CX_MODEL"] = f"gateway:{gateway_model}" if os.environ.get("AI_GATEWAY_API_KEY") else "fake"
 
 from cx_copilot.api import configure_logging, create_app  # noqa: E402

@@ -48,7 +48,7 @@ thread to test follow-ups and the third-contact handoff.
 
 `api/index.py` serves the API and the demo as one Python function. Add an `AI_GATEWAY_API_KEY`
 (Vercel dashboard → AI Gateway → API keys; Hobby includes a free monthly credit) and it uses
-`gateway:deepseek/deepseek-v4.1-flash-1017` (change it with `CX_GATEWAY_MODEL`). Without a key it runs on the offline stand-in, which
+`gateway:tencent/hy4-flash` (a model in AI Gateway's free tier; change it with `CX_GATEWAY_MODEL`). Without a key it runs on the offline stand-in, which
 still shows the routing, escalation and guardrail logic. SQLite lives in `/tmp` on Vercel, so stored
 tickets don't survive a cold start. That's fine for a demo; use the Docker setup for anything real.
 
