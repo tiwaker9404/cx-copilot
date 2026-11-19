@@ -20,4 +20,17 @@ if "CX_MODEL" not in os.environ:
 from cx_copilot.api import configure_logging, create_app  # noqa: E402
 
 configure_logging(os.environ.get("CX_LOG_LEVEL", "INFO"))
-app = create_app()
+_app = create_app()
+
+_PREFIX = "/api/index"
+
+
+async def app(scope, receive, send):
+    """vercel.json rewrites every path to /api/index. Some runtimes hand the function that
+    rewritten path instead of the one the visitor asked for, so map it back before routing."""
+    if scope.get("type") in ("http", "websocket"):
+        path = scope.get("path", "")
+        if path == _PREFIX or path.startswith(_PREFIX + "/"):
+            new_path = path[len(_PREFIX):] or "/"
+            scope = dict(scope, path=new_path, raw_path=new_path.encode())
+    await _app(scope, receive, send)
