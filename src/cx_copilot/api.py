@@ -11,6 +11,7 @@
     GET  /v1/escalations             the human queue
     GET  /v1/stats                   counts for a dashboard
     GET  /healthz  /readyz           liveness and readiness probes
+    GET  /                           one-page try-it demo (CX_DEMO=0 turns it off)
 """
 
 from __future__ import annotations
@@ -27,7 +28,7 @@ from collections import defaultdict, deque
 from typing import Any, Literal
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel, Field
 
 from . import __version__
@@ -168,6 +169,21 @@ def create_app(settings: Settings | None = None, service: TicketService | None =
         if not limiter.allow(who):
             raise HTTPException(429, "rate limit exceeded", headers={"Retry-After": "60"})
         return who
+
+    if os.environ.get("CX_DEMO", "1") != "0":
+        from importlib.resources import files
+
+        demo_page = (files("cx_copilot") / "web" / "demo.html").read_text(encoding="utf-8")
+
+        @app.get("/", response_class=HTMLResponse, include_in_schema=False)
+        def demo() -> str:
+            """A one-page try-it UI over POST /v1/tickets (turn off with CX_DEMO=0)."""
+            return demo_page
+
+        @app.get("/v1/demo/info", include_in_schema=False)
+        def demo_info() -> dict[str, Any]:
+            return {"model": settings.model, "live": not settings.model.startswith("fake"),
+                    "version": __version__}
 
     @app.get("/healthz")
     def healthz() -> dict[str, str]:

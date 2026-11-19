@@ -35,6 +35,23 @@ flowchart LR
     API -. traces + feedback .-> LS[LangSmith]
 ```
 
+## Try it in a browser
+
+`cx-serve` serves a one-page demo at `/`. Pick an example ("Make it free express?", "Overheating",
+"Angry + urgent") or type a ticket, and see the triage, whether a person was brought in and why, the
+reply, the policies it was allowed to use, the model calls and the latency. Keep replying in the same
+thread to test follow-ups and the third-contact handoff.
+
+**Deploy it free on Vercel (Hobby plan):**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tiwaker9404/cx-copilot&project-name=cx-copilot&env=AI_GATEWAY_API_KEY&envDescription=Optional%3A%20an%20AI%20Gateway%20key%20for%20a%20live%20model.%20Leave%20blank%20for%20the%20offline%20stand-in.)
+
+`api/index.py` serves the API and the demo as one Python function. Add an `AI_GATEWAY_API_KEY`
+(Vercel dashboard → AI Gateway → API keys; Hobby includes a free monthly credit) and it uses
+`gateway:deepseek/deepseek-v4.1-flash-1017` (change it with `CX_GATEWAY_MODEL`). Without a key it runs on the offline stand-in, which
+still shows the routing, escalation and guardrail logic. SQLite lives in `/tmp` on Vercel, so stored
+tickets don't survive a cold start. That's fine for a demo; use the Docker setup for anything real.
+
 ## Quickstart (offline, no keys)
 
 ```bash

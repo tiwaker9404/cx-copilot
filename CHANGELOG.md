@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1
+
+- **Try it in a browser:** `cx-serve` now serves a one-page demo at `/` (examples, the thread view,
+  triage, the escalation reason, policies used, model calls and latency). Turn it off with `CX_DEMO=0`.
+- **Vercel AI Gateway** model spec: `gateway:<provider/model>`, using `AI_GATEWAY_API_KEY`.
+- **Deploy on Vercel's free Hobby plan:** `api/index.py` + `vercel.json`. SQLite goes to `/tmp`, and
+  the model is the Gateway when a key is set, otherwise the offline stand-in.
+
 ## 0.3.0
 
 - **Commitment guardrail.** QA now rejects drafts that invent timelines, refunds, credits,

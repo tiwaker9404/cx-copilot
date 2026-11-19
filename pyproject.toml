@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cx-copilot"
-version = "0.3.0"
+version = "0.3.1"
 description = "Customer-support triage and reply agent (LangGraph) with commitment guardrails, human review, LangSmith tracing, evals, an LLM judge and a regression gate."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -35,7 +35,7 @@ cx-harvest = "cx_copilot.harvest:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-cx_copilot = ["prompts/*.md", "data/*.jsonl"]
+cx_copilot = ["prompts/*.md", "data/*.jsonl", "web/*.html"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

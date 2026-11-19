@@ -1,0 +1,5 @@
+langgraph>=1.0
+langgraph-checkpoint-sqlite>=2.0
+langsmith>=0.4
+fastapi>=0.110
+openai>=1.50

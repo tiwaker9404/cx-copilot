@@ -11,6 +11,7 @@ Spec strings accepted by `get_model`:
     fake:lite                 offline stand-in that ignores urgency/sentiment (a "cheaper model")
     ollama:<model>            free local model via Ollama (OLLAMA_BASE_URL, default localhost)
     openai_compat:<model>     any OpenAI-compatible server (CX_OPENAI_COMPAT_BASE_URL)
+    gateway:<provider/model>  Vercel AI Gateway (AI_GATEWAY_API_KEY, or VERCEL_OIDC_TOKEN on Vercel)
     anthropic:<model-name>    needs ANTHROPIC_API_KEY and `pip install -e ".[live]"`
     openai:<model-name>       needs OPENAI_API_KEY and `pip install -e ".[live]"`
 """
@@ -307,6 +308,7 @@ def _record_from(usage: Any, in_attr: str, out_attr: str, started: float, system
 
 
 OLLAMA_DEFAULT_URL = "http://localhost:11434/v1"
+GATEWAY_DEFAULT_URL = "https://ai-gateway.vercel.sh/v1"
 
 
 class OpenAIModel:
@@ -402,11 +404,18 @@ class CachedModel:
 
 
 LIVE_KEYS = {"anthropic": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY"}
-LIVE_PROVIDERS = ("anthropic", "openai", "ollama", "openai_compat")
+LIVE_PROVIDERS = ("anthropic", "openai", "ollama", "openai_compat", "gateway")
+
+
+def gateway_key() -> str | None:
+    """AI Gateway credential: an API key, or the Vercel OIDC token available on deployments."""
+    return os.environ.get("AI_GATEWAY_API_KEY") or os.environ.get("VERCEL_OIDC_TOKEN") or None
 
 
 def missing_key(spec: str) -> str | None:
     """Name of the API-key env var a live model spec needs but does not have, else None."""
+    if spec.partition(":")[0] == "gateway":
+        return None if gateway_key() else "AI_GATEWAY_API_KEY"
     var = LIVE_KEYS.get(spec.partition(":")[0])
     return var if var and not os.environ.get(var) else None
 
@@ -430,7 +439,14 @@ def get_model(spec: str = "fake", *, cache_dir: str | Path | None = None, repeat
             raise ValueError("openai_compat:<model> needs CX_OPENAI_COMPAT_BASE_URL")
         live = OpenAIModel(rest, client, provider="openai_compat", base_url=base_url,
                            api_key=os.environ.get("CX_OPENAI_COMPAT_API_KEY", "none"))
+    elif provider == "gateway" and rest:         # Vercel AI Gateway, e.g. gateway:openai/gpt-...
+        if client is None and not gateway_key():
+            raise ValueError("gateway:<model> needs AI_GATEWAY_API_KEY (or VERCEL_OIDC_TOKEN)")
+        live = OpenAIModel(rest, client, provider="gateway", json_mode=True,
+                           base_url=os.environ.get("AI_GATEWAY_BASE_URL", GATEWAY_DEFAULT_URL),
+                           api_key=gateway_key())
     else:
         raise ValueError(f"Bad model spec {spec!r}. Try 'fake', 'fake:lite', 'ollama:<model>', "
-                         "'openai_compat:<model>', 'anthropic:<model>' or 'openai:<model>'.")
+                         "'openai_compat:<model>', 'gateway:<provider/model>', "
+                         "'anthropic:<model>' or 'openai:<model>'.")
     return CachedModel(live, cache_dir, repeat) if cache_dir else live
